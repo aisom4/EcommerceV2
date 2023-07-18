@@ -1,0 +1,147 @@
+.homeBackground {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(170deg, #111, #000 80%);
+  position: relative;
+  overflow: hidden;
+  height: 50rem;
+}
+
+.homeInfo {
+  margin-top: 15rem;
+  margin-left: 2.5rem;
+}
+
+.firstHomeImg {
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.homeText {
+  font-weight: bold;
+  font-size: 5.8rem;
+}
+
+.homeSmallText {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.displayCards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.soundWaves {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.waveContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px dotted white;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 1rem;
+}
+
+.waveContainer:hover {
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.5s;
+  animation: ease-in-out;
+}
+
+button {
+  height: 3rem;
+  width: 8rem;
+  margin: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.getStarted {
+  border-radius: 0.5rem;
+}
+
+.getStarted:hover {
+  cursor: pointer;
+}
+
+.vvInfo {
+  font-size: 5rem;
+}
+
+.vvText {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .homeBackground {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .homeInfo {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    text-align: center;
+  }
+
+  .firstHomeImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .homeText {
+    font-size: 3.5rem;
+  }
+
+  .homeSmallText {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .displayCards {
+    flex-direction: column;
+  }
+
+  .waveContainer {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+  }
+
+  .vvInfo {
+    font-size: 4rem;
+  }
+
+  .vvText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Tablet devices */
+
+  .homeText {
+    font-size: 4.5rem;
+  }
+
+  .homeSmallText {
+    font-size: 1.5rem;
+  }
+
+  .displayCards {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,67 @@
+.featuresSection {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  background: url("/public/events.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.featureCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featureCard {
+  flex-basis: 30%;
+  background-color: transparent;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.featureCard:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.featureImage {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.featureDescription {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .featureCard {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featureCard {
+    display: none;
+  }
+}
